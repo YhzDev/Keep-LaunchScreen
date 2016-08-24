@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3540A2CA1D6C64B0000F5E90 /* keep.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3540A2C81D6C636B000F5E90 /* keep.mp4 */; };
+		3540A2CD1D6C66B5000F5E90 /* KeepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540A2CC1D6C66B5000F5E90 /* KeepView.m */; };
+		3540A2D01D6C683D000F5E90 /* KeepScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540A2CF1D6C683D000F5E90 /* KeepScrollView.m */; };
 		35FA81401D680C4E006F34AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FA813F1D680C4E006F34AC /* main.m */; };
 		35FA81431D680C4E006F34AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FA81421D680C4E006F34AC /* AppDelegate.m */; };
 		35FA81461D680C4E006F34AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FA81451D680C4E006F34AC /* ViewController.m */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3540A2C81D6C636B000F5E90 /* keep.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = keep.mp4; sourceTree = "<group>"; };
+		3540A2CB1D6C66B4000F5E90 /* KeepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepView.h; sourceTree = "<group>"; };
+		3540A2CC1D6C66B5000F5E90 /* KeepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepView.m; sourceTree = "<group>"; };
+		3540A2CE1D6C683D000F5E90 /* KeepScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepScrollView.h; sourceTree = "<group>"; };
+		3540A2CF1D6C683D000F5E90 /* KeepScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepScrollView.m; sourceTree = "<group>"; };
 		35FA813B1D680C4E006F34AC /* Keep-LaunchScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keep-LaunchScreen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FA813F1D680C4E006F34AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35FA81411D680C4E006F34AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,7 +59,6 @@
 		35FA815F1D680C4E006F34AC /* Keep-LaunchScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Keep-LaunchScreenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FA81631D680C4E006F34AC /* Keep_LaunchScreenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Keep_LaunchScreenUITests.m; sourceTree = "<group>"; };
 		35FA81651D680C4E006F34AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35FA81711D680C6E006F34AC /* keep.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = keep.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +89,7 @@
 		35FA81321D680C4E006F34AC = {
 			isa = PBXGroup;
 			children = (
-				35FA81711D680C6E006F34AC /* keep.mp4 */,
+				3540A2C81D6C636B000F5E90 /* keep.mp4 */,
 				35FA813D1D680C4E006F34AC /* Keep-LaunchScreen */,
 				35FA81571D680C4E006F34AC /* Keep-LaunchScreenTests */,
 				35FA81621D680C4E006F34AC /* Keep-LaunchScreenUITests */,
@@ -107,6 +114,10 @@
 				35FA81421D680C4E006F34AC /* AppDelegate.m */,
 				35FA81441D680C4E006F34AC /* ViewController.h */,
 				35FA81451D680C4E006F34AC /* ViewController.m */,
+				3540A2CB1D6C66B4000F5E90 /* KeepView.h */,
+				3540A2CC1D6C66B5000F5E90 /* KeepView.m */,
+				3540A2CE1D6C683D000F5E90 /* KeepScrollView.h */,
+				3540A2CF1D6C683D000F5E90 /* KeepScrollView.m */,
 				35FA81471D680C4E006F34AC /* Main.storyboard */,
 				35FA814A1D680C4E006F34AC /* Assets.xcassets */,
 				35FA814C1D680C4E006F34AC /* LaunchScreen.storyboard */,
@@ -245,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3540A2CA1D6C64B0000F5E90 /* keep.mp4 in Resources */,
 				35FA814E1D680C4E006F34AC /* LaunchScreen.storyboard in Resources */,
 				35FA814B1D680C4E006F34AC /* Assets.xcassets in Resources */,
 				35FA81491D680C4E006F34AC /* Main.storyboard in Resources */,
@@ -273,8 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				35FA81461D680C4E006F34AC /* ViewController.m in Sources */,
+				3540A2CD1D6C66B5000F5E90 /* KeepView.m in Sources */,
 				35FA81431D680C4E006F34AC /* AppDelegate.m in Sources */,
 				35FA81401D680C4E006F34AC /* main.m in Sources */,
+				3540A2D01D6C683D000F5E90 /* KeepScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Keep-LaunchScreen/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tl.Keep-LaunchScreen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Keep-LaunchScreen/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tl.Keep-LaunchScreen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +514,7 @@
 				35FA816A1D680C4E006F34AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35FA816B1D680C4E006F34AC /* Build configuration list for PBXNativeTarget "Keep-LaunchScreenTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +523,7 @@
 				35FA816D1D680C4E006F34AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35FA816E1D680C4E006F34AC /* Build configuration list for PBXNativeTarget "Keep-LaunchScreenUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +532,7 @@
 				35FA81701D680C4E006F34AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
