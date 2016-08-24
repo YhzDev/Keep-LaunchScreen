@@ -14,7 +14,7 @@
 @property (nonatomic,strong)UIImageView *myImageView;
 @property (nonatomic,strong)KeepScrollView *keepScrollView;
 @property (nonatomic,strong)UIPageControl *keepPageCtl;
-@property (nonatomic,strong)UIButton *loginBtn;
+@property (nonatomic,strong)UIButton *loginButton;
 @property (nonatomic,strong)UIButton *registerButton;
 
 @end
@@ -28,7 +28,7 @@
         [self addSubview:self.myImageView];
         [self addSubview:self.keepScrollView];
         [self addSubview:_keepPageCtl];
-        [self addSubview:self.loginBtn];
+        [self addSubview:self.loginButton];
         [self addSubview:self.registerButton];
         
         self.keepScrollView.titles = @[@"全程记录你的健身数据",@"规范你的训练过程",@"陪伴你迈出跑步的第一步",@"分享汗水后你的性感"];
@@ -62,27 +62,8 @@
     }
     return _myImageView;
 }
-- (UIButton *)loginBtn{
-    if (!_loginBtn) {
-        _loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        CGFloat margin = 20;
-        CGFloat X = CGRectGetMaxX(self.loginBtn.frame) + margin;
-        CGFloat H = 50;
-        CGFloat W = ([UIScreen mainScreen].bounds.size.width - 3 * margin) * 0.5;
-        CGFloat Y = [UIScreen mainScreen].bounds.size.height - H - 15;
-        _loginBtn.frame = CGRectMake(X, Y, W, H);
-        [_loginBtn setTitle:@"登录" forState:UIControlStateNormal];
-        [_loginBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_loginBtn setBackgroundColor:[UIColor whiteColor]];
-        [_loginBtn addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
-        _loginBtn.titleLabel.font = [UIFont systemFontOfSize:18];
-        _loginBtn.layer.cornerRadius = 3.0f;
-        _loginBtn.alpha = 0.4f;
-    }
-    return _loginBtn;
-}
-
-- (UIButton *)registerButton{
+- (UIButton *)registerButton
+{
     if (!_registerButton) {
         _registerButton = [UIButton buttonWithType:UIButtonTypeCustom];
         CGFloat margin = 20;
@@ -99,6 +80,27 @@
         _registerButton.alpha = 0.4f;
     }
     return _registerButton;
+}
+
+- (UIButton *)loginButton
+{
+    if (!_loginButton) {
+        _loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        CGFloat margin = 20;
+        CGFloat X = CGRectGetMaxX(self.registerButton.frame) + margin;
+        CGFloat H = 50;
+        CGFloat W = ([UIScreen mainScreen].bounds.size.width - 3 * margin) * 0.5;
+        CGFloat Y = [UIScreen mainScreen].bounds.size.height - H - 15;
+        _loginButton.frame = CGRectMake(X, Y, W, H);
+        [_loginButton setTitle:@"登录" forState:UIControlStateNormal];
+        [_loginButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_loginButton setBackgroundColor:[UIColor whiteColor]];
+        [_loginButton addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
+        _loginButton.titleLabel.font = [UIFont systemFontOfSize:18];
+        _loginButton.layer.cornerRadius = 3.0f;
+        _loginButton.alpha = 0.4f;
+    }
+    return _loginButton;
 }
 
 - (KeepScrollView *)keepScrollView{
