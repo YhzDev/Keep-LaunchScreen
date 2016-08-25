@@ -24,6 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    //工程里读取MP4
     NSString *moviePath = [[NSBundle mainBundle] pathForResource:@"keep" ofType:@"mp4"];
     
     self.moviePlayCtl.contentURL = [[NSURL alloc] initFileURLWithPath:moviePath];
